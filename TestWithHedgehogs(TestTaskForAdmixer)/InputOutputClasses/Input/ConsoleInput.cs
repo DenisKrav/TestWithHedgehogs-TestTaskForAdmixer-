@@ -7,7 +7,7 @@ using TestWithHedgehogs_TestTaskForAdmixer_.Interfaces;
 using TestWithHedgehogs_TestTaskForAdmixer_.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace TestWithHedgehogs_TestTaskForAdmixer_.InputOutputClasses
+namespace TestWithHedgehogs_TestTaskForAdmixer_.InputOutputClasses.Input
 {
     public class ConsoleInput : IInput
     {
@@ -21,7 +21,14 @@ namespace TestWithHedgehogs_TestTaskForAdmixer_.InputOutputClasses
             {
                 Console.Write($"How many hedgehog has got color {i}: ");
 
-                startData[i] = CheckNumberRange();              
+                startData[i] = CheckNumberRange();
+
+                while (CheckSum(startData)) 
+                {
+                    Console.WriteLine($"The sum of all elements must not exceed {int.MaxValue}. Now the amount is equal {CountSum(startData)}. Try again.");
+
+                    startData[i] = CheckNumberRange();
+                }
             }
             return startData;
         }
@@ -50,6 +57,32 @@ namespace TestWithHedgehogs_TestTaskForAdmixer_.InputOutputClasses
             }
 
             return number;
+        }
+
+        // Метод для підрахунку суми 
+        public long CountSum(int[] arry)
+        {
+            long sum = 0;
+
+            foreach (var a in arry)
+            {
+                sum += a;
+            }
+
+            return sum;
+        }
+
+        // Метод для перевірки суми
+        public bool CheckSum(int[] data)
+        {
+            if (CountSum(data) > Convert.ToInt64(int.MaxValue))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
