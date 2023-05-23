@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWithHedgehogs(TestTaskForAdmixer)", "TestWithHedgehogs(TestTaskForAdmixer)\TestWithHedgehogs(TestTaskForAdmixer).csproj", "{07206E88-DA68-4C61-8683-5EB6F442C326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWithHedgehogs(TestTaskForAdmixer)", "TestWithHedgehogs(TestTaskForAdmixer)\TestWithHedgehogs(TestTaskForAdmixer).csproj", "{07206E88-DA68-4C61-8683-5EB6F442C326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceWithOperationForHedgehogs", "MicroserviceWithOperationForHedgehogs\MicroserviceWithOperationForHedgehogs.csproj", "{FE6954E6-DC54-4B63-A980-E44B7CCADADF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{07206E88-DA68-4C61-8683-5EB6F442C326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07206E88-DA68-4C61-8683-5EB6F442C326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07206E88-DA68-4C61-8683-5EB6F442C326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE6954E6-DC54-4B63-A980-E44B7CCADADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE6954E6-DC54-4B63-A980-E44B7CCADADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE6954E6-DC54-4B63-A980-E44B7CCADADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE6954E6-DC54-4B63-A980-E44B7CCADADF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

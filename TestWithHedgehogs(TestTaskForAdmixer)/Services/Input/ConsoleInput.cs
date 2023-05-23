@@ -7,7 +7,7 @@ using TestWithHedgehogs_TestTaskForAdmixer_.Interfaces;
 using TestWithHedgehogs_TestTaskForAdmixer_.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace TestWithHedgehogs_TestTaskForAdmixer_.InputOutputClasses.Input
+namespace TestWithHedgehogs_TestTaskForAdmixer_.Services.Input
 {
     public class ConsoleInput : IInput
     {
